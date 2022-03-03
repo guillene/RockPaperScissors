@@ -21,6 +21,7 @@ int main(){
   
   int computer = rand () % 3 + 1;
   int user = 0;
+  string result = "";
 
   cout << "====================\n";
   cout << "rock paper scissors!\n";
@@ -45,37 +46,25 @@ int main(){
   // Validate if tie, the only option of having 
   // a tie is if sum of inputs are even 
   // thanks to the enum starting in 1
-  if ( (user + computer) % 2 == 0 ){
-    
-    cout << "It's a TIE";
-    
+  if (( user + computer ) % 2 == 0){
+    result = "It's a TIE\n";
   } else {
     //Evaluate non-tie game results
       switch(user){
         case rock:
-          if(computer == scissors){
-            cout << "You Win!\n" ;
-          }else{
-            cout << "You Loose!\n";
-          }
+          result = (computer == scissors) ? "You Win!\n" : "You Loose!\n";
           break;
         case paper:
-          if(computer == rock){
-            cout << "You Win!\n";
-          }else{
-            cout << "You Loose!\n";
-          }
+          result = (computer == rock) ? "You Win!\n" : "You Loose!\n";
           break;
         case scissors:
-          if(computer == paper){
-            cout << "You Win!\n";
-          }else{
-            cout << "You Loose!\n";
-          }
+          result = (computer == paper) ? "You Win!\n" : "You Loose!\n";
           break;
         default:
           cout << "Unexpected choice, You must be Hacker! " << endl;
       }
     }
+  //Prints game result
+  cout << result;
 
 }
