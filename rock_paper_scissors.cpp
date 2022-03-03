@@ -1,17 +1,10 @@
-/* This is an implementation of Rock, Paper, Scissors, Lizard Spock game from the Big band theory 
+/* This is an implementation of Rock, Paper, Scissors.
 
 #########################################
 ### GAME RULES                        ###
 #########################################
 - Scissors cuts Paper.
 - Paper covers Rock.
-- Rock crushes Lizard.
-- Lizard poisons Spock.
-- Spock smashes Scissors.
-- Scissors decapitate Lizard.
-- Lizard eats Paper.
-- Paper disproves Spock.
-- Spock vaporizes Rock.
 - Rock crushes Scissors.
 
 */
