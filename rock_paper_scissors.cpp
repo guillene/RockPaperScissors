@@ -12,11 +12,14 @@
 #include <iostream>
 #include <string>
 
+#include <windows.h>
+
 #include "utils.h"
 
 using namespace std;
 
 int main(){
+  SetConsoleOutputCP(CP_UTF8);
   srand(time(NULL));
   
   int computer = rand () % 3 + 1;
